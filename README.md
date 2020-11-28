@@ -20,10 +20,21 @@ Step 1: Procedure for Create React Application
 When you launch up the application in the browser at http://localhost:3000/, you would see the welcome screen.
 (React Simple UI)
 
-Step 2: Creating React Frontend application and connect to backend API for Retrieve All best-selling books list
+![](screenshots/react-on-load-screenshot.png)
 
-	We would want to start building the screens shown below:
-	(Book list screenshot and Book details screenshot)
+Step 2: Creating React Frontend application and connect to backend API for Retrieve All best-selling books list.
+
+We would want to start building the screens shown below:
+
+(Book list screenshot)
+
+![](screenshots/book-list.PNG)
+
+(Book details screenshot)
+
+![](screenshots/book-details.PNG)
+
+	
 	
 	Adding Frameworks to React Application
 	In this project, we will make use of axios to execute REST APIs and react-router-dom to do the Routing between pages. Let’s stop the front end app running in the command prompt and execute these commands.
