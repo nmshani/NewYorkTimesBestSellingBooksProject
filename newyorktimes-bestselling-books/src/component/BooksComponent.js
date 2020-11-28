@@ -48,8 +48,8 @@ class BooksComponent extends Component {
         BooksService.retrieveAllBooks()
             .then(
                 response => {
-                    debugger;
-                    console.log(response);
+                    //debugger;
+                    //console.log(response);
                     //Book list
                     bookslist = response.data.results['books'];
                     this.setState({books:bookslist});
@@ -88,8 +88,8 @@ class BooksComponent extends Component {
                         title: oneBook[0]['title'],
                         weeks_on_list: oneBook[0]['weeks_on_list']
                     })
-                    console.log('oneBook :',oneBook)
-                    console.log('State :',this.state)
+                    //console.log('oneBook :',oneBook)
+                    //console.log('State :',this.state)
                 }
             ).catch(err => {
                 console.log('Error ->',err.message);

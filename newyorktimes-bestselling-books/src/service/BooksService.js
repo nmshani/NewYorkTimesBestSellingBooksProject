@@ -29,13 +29,13 @@ class BooksService {
     //I used "current" for {date} to get the latest list.
     //Used default name as "hardcover-fiction"
     retrieveAllBooks() {
-        debugger
+        //debugger
         return axios.get(`${API_NYTIMES}/lists/current/${NAME}.json?api-key=${API_KEY}`);
     }
 
     //The book reviews service lets you get NYT book review by author, ISBN, or title.
     bookReviewService(){
-        debugger
+        //debugger
         return axios.get(`${API_NYTIMES}/lists/current/${NAME}.json?api-key=${API_KEY}`);
     }
 }

@@ -21,14 +21,14 @@ constructor(props) {
         BooksService.retrieveAllBooks()
             .then(
                 response => {
-                    debugger;
-                    console.log(response);
+                    //debugger;
+                    //console.log(response);
                     //Get Result set
                     this.setState({bookList : response.data.results})
                     //Get book list
                     this.setState({bookAll:this.state.bookList['books']})
-                    console.log('Book List :',this.state.bookList['books'])
-                    console.log('Book All :',this.state.bookAll)
+                    //console.log('Book List :',this.state.bookList['books'])
+                    //console.log('Book All :',this.state.bookAll)
                 }
             ).catch(err => {
                 console.log('Error ->',err.message);
@@ -38,7 +38,7 @@ constructor(props) {
 
     //Click View Button for more details
     viewBookClicked(id) {
-        console.log('View Ranks ID ' + id)
+        //console.log('View Ranks ID ' + id)
         this.props.history.push(`/book/${id}`)
     }
 
